@@ -36,6 +36,10 @@ var mc = new Hammer(myElement);
 ## Hammer.defaults
 The defaults when creating an instance that are merged being with your options.
 
+### computeInterval: 25
+The minimum interval (in ms) between two events for them to be considered as separate.
+Increasing this may improve event detection correctness on lower-end browsers.
+
 ### touchAction: 'compute'
 Accepts the `compute`, `auto`, `pan-y`, `pan-x` and `none` values. The default option will choose the
 correct value for you, based on the recognizers.
